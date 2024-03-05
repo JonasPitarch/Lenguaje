@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form10AltaUsuario</title>
+    <style> 
+            
+        * 
+            {
+     
+            color: rgba(226, 6, 255, 0.701); font: size 16px;
+    
+            }
+
+        p 
+            { 
+                 margin-left: 2em; 
+             }
+        h2 
+            { 
+                margin-left: 1em 
+            }
+        fieldset
+            { 
+                margin-left: 1em; 
+                 margin-right: 1em; 
+                margin-top: 1em;
+            }
+    </style>
+</head>
+<body style="background-color: rgb(251, 255, 0);">
+    
+    <form action="maneja_formulario.php" method="post">
+        <h1>Alta Usuarios DAM_23_Benigasló</h1>
+        
+        
+                    <legend>Datos personales</legend>
+                <br>
+            Identificación de nuevo usuario:<input type="text" name="nombre" value="user_0123456789" /> <br><br>
+    <div style="background-color: bisque;"><fieldset>
+         <legend>Datos personales ususario></legend>
+            Nombre:
+                    <input type="text" name="nombre" value="" />
+                
+                Apellidos:
+                <input type="text" name="apellidos" value="" />
+                <br>          <br>
+                <br>
+
+                
+                Password:
+                <input type="password" name="password" value="" maxlength="50" />
+                                
+                Confirmar password:
+                <input type="password" name="password2" value="" maxlength="50" /><br><br>
+                
+                <p><label for="e-mail">Email:</label> <input type="text" name="e-mail" id="e-mail" size="35" value:" @"/></p>
+                
+                <p>Sexo<br/>
+                    <input type="radio" name="sexo" checked="checked" id="Hombre" value="v"/> <label for="varon" >Hombre</label>
+                    <input type="radio" name="sexo" id="mujer" value="m"/> <label for="mujer">Hombre</label>
+                    <input type="radio" name="sexo" checked="checked" id="otro" value="x"><label for="otro">Otro</label></p>
+
+                
+                Nivel  
+                <input type="password" name="password2" value="" maxlength="100" /><br><br>
+               
+                Pasatiempos <br>
+                    <input type="checkbox" name="Pasatiempo 1" value="leer"> Lectura <br><br>
+                    <input type="checkbox" name="Pasatiempo "2 value="deportes"> Hacer deprotes <br><br>
+                    <input type="checkbox" name="Pasatiempo 3" value="musica"> Escuchar musica<br><br>
+                    <input type="checkbox" name="Pasatiempo 4" value="otros" checked>Otros<br><br>  
+
+                <p><label for="frecuencia">Pais:</label></p>
+                 <p><select name="frecuencia" id="frecuencia">
+                            <option>Francia</option>
+                            <option>Alemania</option>
+                            <option>Rumania</option>
+                            <option>Italia</option>
+                            <option>Polonia</option>
+                            <option>Ucrania</option>
+                            <option>Rusia</option>
+                            <option>España</option>
+                            <option>Portugal</option>
+                            <option>Argelia</option>
+                            <option>Jonás</option>
+                     </select></p>
+           
+            <p><label for="articulo">Subir Archivo:</label> <input type="file" name="artículo" id="articulo"/></p>	
+               Comentarios:     
+            <p><label >Si deseas mandar simplemente tu opinión o comentario escribelo aquí.</label><br/>
+            <textarea name="comentario" id="comentario" rows="5" cols="50">Escribe tu comentario: </textarea>
+
+            <p><input type="reset" value="Resetear"/> <input type="reset" value="Borrar "/> </p>
+            <p><input type="reset" value="Modificar datos del usuario"/></p>
+
+            Define un rango de satisfacción: <input type="range" name="rangos" size="50"> <br><br>
+
+
+        </div></fieldset>
+         
+        <div style="background-color: aqua;">    
+            <fieldset>
+            <legend>Realiza de una vez el envio Hombre</legend>
+            <p>Enviar formulario por correo electronico: Al pulsar en el botón se abrirá la pagina
+               de envío de correo: en esa página pulsa en enviar: (Este formulario es propiedad de Jonás.SL)</p>
+            <p><input type="submit" value="Enviar el formulario y no crear una copia"/>
+            <input color="red" type="submit" value="Enviar el formulario y crear una copia"></p>
+            </fieldset>
+        </div>   
+    </form>
+
+    
+
+
+</body>
+</html>
